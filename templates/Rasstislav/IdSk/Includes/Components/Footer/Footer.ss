@@ -23,7 +23,7 @@
                         </div>
                         <div class="govuk-grid-column-one-third idsk-footer-extended-logo-box">
                             <a href="$BaseHref" title="domov">
-                                <img src="$ThemeDir/images/logo.svg" alt="$SiteConfig.Title" class="idsk-footer-extended-logo">
+                                <img src="$ThemeDir/images/logo_footer.svg" alt="$SiteConfig.Title" class="idsk-footer-extended-logo">
                             </a>
                         </div>
                     </div>
