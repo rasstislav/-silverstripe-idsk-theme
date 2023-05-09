@@ -2,7 +2,7 @@
 	<ul class="idsk-header-web__nav-list" aria-label="Hlavná navigácia">
 		<% loop $Menu(1) %>
 			<li class="idsk-header-web__nav-list-item $LinkingMode">
-				<a href="<% if $Children %>#<% else %>$Link<% end_if %>" title="$MenuTitle.XML"<% if $Children %> aria-label="Rozbaliť $MenuTitle.XML menu" aria-expanded="false" data-text-for-hide="Zavrieť $MenuTitle.XML menu" data-text-for-show="Rozbaliť $MenuTitle.XML menu"<% end_if %> class="govuk-link idsk-header-web__nav-list-item-link">
+				<a href="<% if $Children %>javascript:void(0);<% else %>$Link<% end_if %>" title="$MenuTitle.XML"<% if $Children %> aria-label="Rozbaliť $MenuTitle.XML menu" aria-expanded="false" data-text-for-hide="Zavrieť $MenuTitle.XML menu" data-text-for-show="Rozbaliť $MenuTitle.XML menu"<% end_if %> class="govuk-link idsk-header-web__nav-list-item-link">
 					$MenuTitle.XML.LimitCharacters(50)
 					<% if $Children %>
 						<div class="idsk-header-web__link-arrow"></div>
