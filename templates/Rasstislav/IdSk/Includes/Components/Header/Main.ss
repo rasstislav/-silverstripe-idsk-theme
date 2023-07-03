@@ -12,7 +12,7 @@
 						<img src="$ThemeDir/images/logo.svg" alt="$SiteConfig.Title" class="idsk-header-web__main-headline-logo">
 					</a>
 					<% if not $IsService %>
-						<button aria-label="Rozbaliť menu" aria-expanded="false" data-text-for-show="Rozbaliť menu" data-text-for-hide="Zavrieť menu" class="idsk-button idsk-header-web__main-headline-menu-button">
+						<button aria-label="Rozbaliť menu" aria-expanded="false" data-text-for-show="Rozbaliť menu" data-text-for-hide="Zavrieť menu" data-text-for-close="Zavrieť" class="idsk-button idsk-header-web__main-headline-menu-button">
 							Menu
 							<span class="idsk-header-web__menu-open"></span>
 							<span class="idsk-header-web__menu-close"></span>
