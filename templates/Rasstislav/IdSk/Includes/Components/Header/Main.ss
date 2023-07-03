@@ -25,7 +25,7 @@
 					<% end_if %>
 				</div>
 			</div>
-			<div class="govuk-grid-column-two-thirds">
+			<div class="govuk-grid-column-full govuk-grid-column-two-thirds">
 				<div class="idsk-header-web__main-action">
 					<% if not $IsService %>
 						$SearchForm.addExtraClass(idsk-header-web__main-action-search)
