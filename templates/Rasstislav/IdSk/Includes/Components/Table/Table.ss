@@ -1,5 +1,5 @@
 <div data-module="idsk-table">
-	<% include Rasstislav/IdSk/Includes/Components/Table/TableHeading Title=$HeadingTitle, Body=$HeadingBody %>
+	<% include Rasstislav/IdSk/Includes/Components/Table/TableHeading TitleComponent=$HeadingTitleComponent, Title=$HeadingTitle, Body=$HeadingBody %>
 	$TableFilterForm
 	<% include Rasstislav/IdSk/Includes/Components/Table/TableBody Header=$TableHeader, Body=$TableBody, EmptyMessage=$TableEmptyMessage %>
 	$Pagination

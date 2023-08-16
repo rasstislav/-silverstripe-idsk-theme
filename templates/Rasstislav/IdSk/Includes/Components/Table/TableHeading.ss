@@ -1,7 +1,9 @@
-<% if $Title || $Body %>
+<% if $Title || $TitleComponent || $Body %>
 	<div class="idsk-table__heading">
 		<div>
-			<% if $Title %>
+			<% if TitleComponent %>
+				$TitleComponent
+			<% else_if $Title %>
 				<h2 class="govuk-heading-l govuk-!-margin-bottom-4">$Title</h2>
 			<% end_if %>
 			<% if $Body %>

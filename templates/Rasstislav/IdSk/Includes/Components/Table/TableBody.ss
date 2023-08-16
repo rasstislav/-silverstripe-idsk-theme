@@ -1,9 +1,11 @@
 <table class="idsk-table">
-	<thead class="idsk-table__head">
-		<tr class="idsk-table__row">
-			$Header
-		</tr>
-	</thead>
+	<% if $Header %>
+		<thead class="idsk-table__head">
+			<tr class="idsk-table__row">
+				$Header
+			</tr>
+		</thead>
+	<% end_if %>
 	<tbody class="idsk-table__body">
 		<% if $Body %>
 			$Body
