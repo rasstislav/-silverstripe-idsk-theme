@@ -1,0 +1,1 @@
+<input $addExtraClass('govuk-input').AttributesHTML<% if $RightTitle || $Message %> aria-describedby="<% if $RightTitle %>{$ReferenceID}-hint<% end_if %> <% if $Message %>{$ReferenceID}-error<% end_if %>"<% end_if %>/>
