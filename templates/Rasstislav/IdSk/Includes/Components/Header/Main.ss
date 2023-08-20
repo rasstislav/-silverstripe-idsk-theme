@@ -2,7 +2,7 @@
 	optional parameters:
 		- IsService: boolean (default: false)
 		- AddLoginButton: boolean (default: false)
- --%>
+--%>
 <div class="idsk-header-web__main">
 	<div class="govuk-width-container">
 		<div class="govuk-grid-row">

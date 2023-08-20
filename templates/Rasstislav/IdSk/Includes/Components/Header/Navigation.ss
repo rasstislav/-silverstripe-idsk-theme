@@ -2,7 +2,7 @@
 	optional parameters:
 		- IsService: boolean (default: false)
 		- AddLoginButton: boolean (default: false)
- --%>
+--%>
 <% if not $IsService %>
 	<div class="idsk-header-web__nav--divider"></div>
 <% end_if %>

@@ -4,7 +4,7 @@
 
 	optional parameters:
 		- Warning: boolean (default: false)
- --%>
+--%>
 <div class="idsk-header-web__banner<% if $Warning %> idsk-header-web__banner--warning<% end_if %>">
 	<div class="govuk-width-container">
 		<div class="govuk-grid-row">
