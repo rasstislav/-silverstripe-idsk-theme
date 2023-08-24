@@ -1,0 +1,135 @@
+/* utilities  */
+.text-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* header search-form */
+@media (max-width: 48.0525em) {
+    .idsk-header-web__main-action-search {
+        display: none;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* table-filter */
+.idsk-table-filter__parameter {
+    display: flex;
+    align-items: baseline;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.idsk-table-filter__parameter .idsk-table-filter__parameter-title {
+    display: flex;
+    max-width: 100%;
+}
+
+/* timeline */
+.idsk-timeline__content {
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.idsk-timeline__content.govuk-body {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.idsk-timeline__content__date-line {
+    margin-top: 5px;
+    margin-bottom: -55px;
+}
+
+.idsk-timeline__content__title {
+    margin-top: 0;
+}
+
+.idsk-timeline__content__title .govuk-heading-m {
+    margin-top: 0;
+}
+
+.idsk-timeline__content__title-div {
+    margin-top: 30px;
+    margin-bottom: -15px;
+}
+
+/* pagination  */
+.idsk-pagination {
+    font-size: 0;
+    line-height: 0;
+}
+
+.idsk-pagination .idsk-button {
+    width: auto;
+}
+
+/* buttons */
+.idsk-button--transparent {
+    color: inherit;
+    background: transparent;
+    box-shadow: none;
+}
+
+.idsk-button--events-none {
+    pointer-events: none;
+}
+
+/* stepper */
+.govuk-heading-l.idsk-stepper-pattern__intro-heading {
+    margin-bottom: 20px;
+    padding-top: 0;
+    margin-top: -10px;
+}
+
+/* article */
+.idsk-article-pattern__subtitle {
+    color: #626A6E;
+    padding-bottom: 5px;
+}
+
+@media(min-width: 48.0525em) {
+    .idsk-article-pattern__element-right {
+        float: right;
+        margin-right: 15px;
+    }
+}
+
+#idsk-article-pattern .govuk-body-s {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.idsk-article-pattern__text-silver--down {
+    padding-top: 10px;
+    padding-bottom: 13px;
+}
+
+.idsk-article-pattern__text-silver--up {
+    border-top: 1px solid #BFC1C3;
+    padding-top: 10px;
+}
+
+@media(min-width: 48.0525em) {
+    .idsk-article-pattern__text-silver--down {
+        border-bottom: 1px solid #BFC1C3;
+    }
+}
+
+.idsk-article__social-networks {
+    margin-left: -15px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.idsk-article__social-networks a {
+    text-decoration: none;
+}
