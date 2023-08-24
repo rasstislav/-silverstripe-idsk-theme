@@ -3,7 +3,7 @@
 		- Identifier: string
 		- Items: string || Body: List
 --%>
-<div id="$Identifier" data-module="idsk-accordion" data-attribute="value" class="govuk-accordion">
+<div id="accordion-{$Identifier}" data-module="idsk-accordion" data-attribute="value" class="govuk-accordion">
 	<div class="govuk-accordion__controls">
 		<button type="button" aria-expanded="false" data-open-title="Otvoriť všetky" data-close-title="Zatvoriť všetky" class="govuk-accordion__open-all">
 			<span data-section-title="sekcie" class="govuk-visually-hidden govuk-accordion__controls-span"></span>
