@@ -14,13 +14,7 @@
 			</p>
 			<ul class="govuk-list govuk-error-summary__list">
 				<% loop $Fields %>
-					<% loop $Children %>
-						<% if $Message %>
-							<li>
-								<a href="#$ReferenceID">$Message</a>
-							</li>
-						<% end_if %>
-					<% end_loop %>
+					<% include SilverStripe/Includes/UserForms/Errors %>
 				<% end_loop %>
 			</ul>
 		</div>
