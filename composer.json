@@ -16,7 +16,8 @@
     ],
     "require": {
         "silverstripe/framework": "^4.0",
-        "moo/template-tags": "^2.1"
+        "moo/template-tags": "^2.1",
+        "rasstislav/silverstripe-idsk": "dev-develop"
     },
     "extra": {
         "installer-name": "id-sk",
