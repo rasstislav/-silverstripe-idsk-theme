@@ -1,4 +1,4 @@
-<h1 class="govuk-heading-l">
+<h1 class="govuk-heading-xl">
 	<% if $ArchiveYear %>
 		<%t SilverStripe\\Blog\\Model\\Blog.Archive 'Archive' %>:
 		<% if $ArchiveDay %>
