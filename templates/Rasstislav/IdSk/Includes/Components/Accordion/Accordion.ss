@@ -1,7 +1,7 @@
 <%--
 	required parameters:
 		- Identifier: string
-		- Items: string || Body: List
+		- Items: List || Body: string
 --%>
 <div id="accordion-{$Identifier}" data-module="idsk-accordion" data-attribute="value" class="govuk-accordion">
 	<div class="govuk-accordion__controls">
