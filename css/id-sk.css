@@ -10,6 +10,10 @@
     height: auto;
 }
 
+.u-mw-100 {
+    max-width: 100%;
+}
+
 /* header search-form */
 @media (max-width: 48.0525em) {
     .idsk-header-web__main-action-search {
