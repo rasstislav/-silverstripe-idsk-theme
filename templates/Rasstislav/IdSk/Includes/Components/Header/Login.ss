@@ -4,7 +4,7 @@
 		Prihlásiť sa
 	</button>
 	<div class="idsk-header-web__main--login-action">
-		<img src="$ThemeDir/images/header-web/profile.svg" alt="Profile image" class="idsk-header-web__main--login-action-profile-img">
+		<img src="$resourceURL('themes/id-sk/images/header-web/profile.svg')" alt="Profile image" class="idsk-header-web__main--login-action-profile-img">
 		<div class="idsk-header-web__main--login-action-text">
 			<span class="govuk-body-s idsk-header-web__main--login-action-text-user-name">
 				Ing. Jožko Veľký M.A

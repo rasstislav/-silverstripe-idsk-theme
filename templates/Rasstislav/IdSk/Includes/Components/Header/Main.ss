@@ -19,7 +19,7 @@
 						</button>
 					<% else_if $AddLoginButton %>
 						<button aria-label="Rozbaliť menu" aria-expanded="false" data-text-for-show="Rozbaliť menu" data-text-for-hide="Zavrieť menu" class="idsk-button idsk-header-web__main-headline-menu-button idsk-header-web__main-headline-menu-button-service">
-							<img src="$ThemeDir/images/header-web/profile.svg" alt="Electronic service menu icon">
+							<img src="$resourceURL('themes/id-sk/images/header-web/profile.svg')" alt="Electronic service menu icon">
 							<span class="idsk-header-web__menu-close"></span>
 						</button>
 					<% end_if %>

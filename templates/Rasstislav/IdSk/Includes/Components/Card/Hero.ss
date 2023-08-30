@@ -13,7 +13,7 @@
 		<% if $Image %>
 			$Image.setAttribute('aria-hidden', 'true').setAttribute('class', 'idsk-card-img idsk-card-img-hero')
 		<% else %>
-			<img src="$ThemeDir/images/image-placeholder.jpg" alt="$Title" aria-hidden="true" class="idsk-card-img idsk-card-img-hero">
+			<img src="$resourceURL('themes/id-sk/images/image-placeholder.jpg')" alt="$Title" aria-hidden="true" class="idsk-card-img idsk-card-img-hero">
 		<% end_if %>
 	</a>
 	<div class="idsk-card-content idsk-card-content-hero">
