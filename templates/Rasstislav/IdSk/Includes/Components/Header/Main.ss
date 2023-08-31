@@ -8,7 +8,7 @@
 		<div class="govuk-grid-row">
 			<div class="govuk-grid-column-full govuk-grid-column-one-third-from-desktop">
 				<div class="idsk-header-web__main-headline">
-					<a href="$BaseHref" title="Odkaz na úvodnú stránku" rel="home">
+					<a href="$CurrentLocale.BaseURL" title="Odkaz na úvodnú stránku" rel="home">
 						<img src="$ThemeDir/images/logo.svg" alt="$SiteConfig.Title" class="idsk-header-web__main-headline-logo u-mw-100">
 					</a>
 					<% if not $IsService %>
