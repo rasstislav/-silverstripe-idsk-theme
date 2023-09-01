@@ -1,4 +1,9 @@
-<% if $Title || $TitleComponent || $Body %>
+<%--
+	optional parameters:
+		- TitleComponent: string (default: empty) || Title: string (default: empty)
+		- Body: string (default: empty)
+--%>
+<% if $TitleComponent || $Title || $Body %>
 	<div class="idsk-table__heading">
 		<div>
 			<% if TitleComponent %>

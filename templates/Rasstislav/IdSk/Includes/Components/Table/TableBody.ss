@@ -1,4 +1,12 @@
-<table class="idsk-table">
+<%--
+	required parameters:
+		- BodyRows: List || Body: string || EmptyMessage: string
+
+	optional parameters:
+		- Header: string (default: empty)
+		- ExtraClass: string (default: empty)
+--%>
+<table class="idsk-table<% if $ExtraClass %> $ExtraClass<% end_if %>">
 	<% if $Header %>
 		<thead class="idsk-table__head">
 			<tr class="idsk-table__row">
@@ -7,7 +15,11 @@
 		</thead>
 	<% end_if %>
 	<tbody class="idsk-table__body">
-		<% if $Body %>
+		<% if $BodyRows %>
+			<% loop $BodyRows %>
+				<% include Rasstislav/IdSk/Includes/Components/Table/TableRow %>
+			<% end_loop %>
+		<% else_if $Body %>
 			$Body
 		<% else_if $EmptyMessage %>
 			<% template 'Rasstislav/IdSk/Includes/Components/Table/TableRow' %>

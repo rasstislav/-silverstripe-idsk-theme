@@ -1,3 +1,10 @@
+<%--
+	required parameters:
+		- Title: string
+
+	optional parameters:
+		- IsNumeric: boolean (default: false)
+--%>
 <th scope="col" class="idsk-table__header<% if $IsNumeric %> idsk-table__header--numeric<% end_if %>">
 	<span class="th-span">
 		$Title
