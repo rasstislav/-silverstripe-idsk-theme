@@ -24,5 +24,5 @@
 		<% include Rasstislav/IdSk/Pagination %>
 	<% end_with %>
 <% else %>
-	<p><%t SilverStripe\\Blog\\Model\\Blog.NoPosts 'There are no posts' %></p>
+	<p class="govuk-body govuk-!-margin-bottom-0"><%t SilverStripe\\Blog\\Model\\Blog.NoPosts 'There are no posts' %></p>
 <% end_if %>
