@@ -2,7 +2,7 @@
     $BackLink.addExtraClass('govuk-back-link')
 <% end_if %>
 <% if $ShowTitle %>
-    <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">$Title</h1>
+    <h1 class="govuk-heading-xl">$Title</h1>
 <% end_if %>
 <% if $ElementalArea %>
     $ElementalArea
