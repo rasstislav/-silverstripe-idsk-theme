@@ -5,7 +5,7 @@
 	optional parameters:
 		- ExtraClass: string (default: empty)
 --%>
-<div data-module="idsk-timeline" class="idsk-timeline govuk-clearfix<% if $Items %> govuk-main-wrapper govuk-!-padding-top-0<% end_if %><% if $ExtraClass %> $ExtraClass<% end_if %>">
+<div data-module="idsk-timeline" class="idsk-timeline govuk-clearfix<% if $Items %> has-items<% end_if %><% if $ExtraClass %> $ExtraClass<% end_if %>">
 	<%-- TODO: <div class="idsk-timeline__button__div">
 		<button type="button" class="idsk-timeline__button--back">
 			<svg class="idsk-timeline__button__svg--previous" width="20" height="15" viewbox="0 -2 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
