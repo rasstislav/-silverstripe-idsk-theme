@@ -242,3 +242,14 @@
 .idsk-cookie-banner__message:focus {
     outline: none;
 }
+
+/* tabs */
+.idsk-tabs__mobile-tab-content:not(.idsk-tabs__mobile-tab-content--hidden) {
+    display: block;
+}
+
+@media (min-width: 40.0625em) {
+    .idsk-tabs__mobile-tab-content {
+         display: block;
+    }
+}
