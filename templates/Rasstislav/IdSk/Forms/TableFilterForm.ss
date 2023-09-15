@@ -1,4 +1,4 @@
-<div data-module="idsk-table-filter" data-idsk-table-filter-expand-sections="true" class="idsk-table-filter">
+<div data-module="idsk-table-filter"<% if $isEnabledSubmission %> data-idsk-table-filter-enable-submission="true"<% if $isEnabledEmptySubmission %> data-idsk-table-filter-enable-empty-submission="true"<% end_if %><% end_if %> data-idsk-table-filter-expand-sections="true" class="idsk-table-filter">
 	<div<% if $isExpanded || $ExpandFormOnEmptyData && $isEmpty %> data-idsk-table-filter-expand="true"<% end_if %> class="idsk-table-filter__panel idsk-table-filter__inputs">
 		<div class="idsk-table-filter__title govuk-heading-m">$Legend</div>
 		<button class="govuk-body govuk-link idsk-filter-menu__toggle"
