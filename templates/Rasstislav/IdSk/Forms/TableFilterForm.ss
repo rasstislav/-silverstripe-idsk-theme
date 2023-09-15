@@ -1,15 +1,16 @@
-<div data-module="idsk-table-filter" class="idsk-table-filter">
-	<div class="idsk-table-filter__panel idsk-table-filter__inputs<% if $ExpandFormOnEmptyData && $isEmpty %> idsk-table-filter--expanded<% end_if %>">
+<div data-module="idsk-table-filter" data-idsk-table-filter-expand-sections="true" class="idsk-table-filter">
+	<div<% if $isExpanded || $ExpandFormOnEmptyData && $isEmpty %> data-idsk-table-filter-expand="true"<% end_if %> class="idsk-table-filter__panel idsk-table-filter__inputs">
 		<div class="idsk-table-filter__title govuk-heading-m">$Legend</div>
 		<button class="govuk-body govuk-link idsk-filter-menu__toggle"
 			tabindex="0"
 			data-open-text="Rozbaliť obsah filtra"
 			data-close-text="Zbaliť obsah filtra"
-			data-category-name=""
+			data-category-name="Obsah filtra"
+			data-section-id="$Name-Obsahfiltra"
 			aria-label="Rozbaliť obsah filtra"
 			type="button"
 		>
-			Zbaliť obsah filtra
+			Rozbaliť obsah filtra
 		</button>
 		<form $addExtraClass('idsk-table-filter__content idsk-filter-form').AttributesHTML>
 			<% if $Message %>
@@ -36,7 +37,8 @@
 			  tabindex="0"
 			  data-open-text="Rozbaliť aktívny filter"
 			  data-close-text="Zbaliť aktívny filter"
-			  data-category-name=""
+			  data-category-name="Aktívny filter"
+			  data-section-id="$Name-Aktivnyfilter"
 			  aria-label="Zbaliť aktívny filter"
 			  type="button"
 		>
