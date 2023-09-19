@@ -1,7 +1,7 @@
 <% if $UseButtonTag %>
-	<button $addExtraClass('govuk-button').setAttribute('data-module', 'govuk-button').AttributesHTML>
+	<button $addExtraClass('idsk-button').setAttribute('data-module', 'idsk-button').AttributesHTML>
 		<% if $ButtonContent %>$ButtonContent<% else %><span>$Title.XML</span><% end_if %>
 	</button>
 <% else %>
-	<input $addExtraClass('govuk-button').setAttribute('data-module', 'govuk-button').AttributesHTML />
+	<input $addExtraClass('idsk-button').setAttribute('data-module', 'idsk-button').AttributesHTML />
 <% end_if %>
