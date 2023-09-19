@@ -1,7 +1,7 @@
 <%--
 	optional parameters:
 		- IsService: boolean (default: false)
-		- Feedback: string (default: empty)
+		- FooterElementalArea: string (default: empty)
 --%>
 <div data-module="idsk-footer-extended">
 	<footer class="idsk-footer-extended idsk-footer-extended--up-button-enabled">
@@ -18,7 +18,7 @@
 				</div>
 			</div>
 		</div>
-		$Feedback
+		$FooterElementalArea
 		<div class="idsk-footer-extended-main-content">
 			<div class="govuk-width-container">
 				<div class="govuk-grid-column-full">
