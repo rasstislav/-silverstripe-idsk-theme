@@ -253,3 +253,9 @@
          display: block;
     }
 }
+
+/* footer */
+.idsk-footer-extended {
+    align-items: stretch;
+    overflow: hidden;
+}
