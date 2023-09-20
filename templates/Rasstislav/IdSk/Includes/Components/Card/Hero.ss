@@ -7,6 +7,7 @@
 
 	optional parameters:
 		- IsHtmlDescription: boolean (default: true)
+		- ShowBlogTitle: boolean (default: false)
 --%>
 <div class="idsk-card idsk-card-hero">
 	<a href="$Link" title="$Title">
@@ -22,6 +23,13 @@
 				<span class="idsk-card-meta idsk-card-meta-date">
 					<a href="$MonthlyArchiveLink" title="Pridané dňa: $PublishDate.Date" class="govuk-link">$PublishDate.Date</a>
 				</span>
+				<% if $ShowBlogTitle %>
+					<% with $Parent %>
+						<span class="idsk-card-meta idsk-card-meta-tag">
+							<a href="$Link" title="$Title" class="govuk-link">$Title</a>
+						</span>
+					<% end_with %>
+				<% end_if %>
 				<% if $Categories.exists || $Tags.exists %>
 					<% loop $Categories %>
 						<span class="idsk-card-meta idsk-card-meta-tag">
