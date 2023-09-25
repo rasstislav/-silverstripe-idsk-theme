@@ -1,6 +1,7 @@
 <%--
 	optional parameters:
 		- IsService: boolean (default: false)
+		- HeaderElementalArea: string (default: empty)
 --%>
 <header data-module="idsk-header-web" role="banner" class="idsk-header-web">
 	<div class="idsk-header-web__scrolling-wrapper">
@@ -10,3 +11,6 @@
 		<% include Rasstislav/IdSk/Includes/Components/Header/Navigation IsService=$IsService %>
 	</div>
 </header>
+<div class="govuk-width-container">
+	$HeaderElementalArea
+</div>
