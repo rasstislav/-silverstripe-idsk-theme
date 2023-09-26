@@ -1,11 +1,13 @@
 <% if $BackLink %>
-    $BackLink.addExtraClass('govuk-back-link')
+	$BackLink.addExtraClass('govuk-back-link')
 <% end_if %>
 <% if $ShowTitle %>
-    <h1 class="govuk-heading-xl">$Title</h1>
+	<h1 class="govuk-heading-xl">$Title</h1>
 <% end_if %>
+$BeforeContent
 <% if $ElementalArea %>
-    $ElementalArea
+	$ElementalArea
 <% else %>
-    $Content
+	$Content
 <% end_if %>
+$AfterContent

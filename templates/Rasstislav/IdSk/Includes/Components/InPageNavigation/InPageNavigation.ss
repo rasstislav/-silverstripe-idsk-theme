@@ -5,6 +5,7 @@
 	optional parameters:
 		- IncludeIntroAttr: boolean (default: true)
 		- BeforeContent: string (default: empty)
+		- AfterContent: string (default: empty)
 		- ContentExtraClass: string (default: empty)
 --%>
 <div class="govuk-grid-row">
@@ -31,5 +32,6 @@
 	</div>
 	<div<% if $IncludeIntroAttr != false %> id="uvod-$ID"<% end_if %> class="govuk-grid-column-three-quarters-from-desktop<% if $ContentExtraClass %> $ContentExtraClass<% end_if %>">
 		$Content
+		$AfterContent
 	</div>
 </div>
