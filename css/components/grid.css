@@ -1,0 +1,9 @@
+@media (max-width: 40.0525em) {
+    .govuk-grid-row.govuk-grid-row--auto-spacing > *:not(.govuk-grid-column-full) {
+        margin-top: 20px;
+    }
+
+    .govuk-grid-row.govuk-grid-row--auto-spacing > :not(.govuk-grid-column-full):first-child {
+        margin-top: 0px;
+    }
+}

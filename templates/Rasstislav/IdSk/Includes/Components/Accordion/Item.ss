@@ -22,7 +22,7 @@
 		<% end_if %>
 	</div>
 	<div id="accordion-{$Identifier}-content-$Pos" aria-labelledby="1-heading-1" class="govuk-accordion__section-content">
-		<div class="govuk-body">
+		<div class="typography">
 			$Content
 		</div>
 	</div>

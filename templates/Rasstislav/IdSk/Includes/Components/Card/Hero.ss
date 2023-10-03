@@ -47,7 +47,7 @@
 		<div class="idsk-heading idsk-heading-hero">
 			<a href="$Link" title="$Title" class="idsk-card-title govuk-link">$Title</a>
 		</div>
-		<div class="idsk-body idsk-body-hero">
+		<div class="idsk-body idsk-body-hero typography">
 			<% if $IsHtmlDescription != false %>
 				$Description
 			<% else %>

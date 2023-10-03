@@ -12,7 +12,7 @@
 				<h2 class="govuk-heading-l govuk-!-margin-bottom-4">$Title</h2>
 			<% end_if %>
 			<% if $Body %>
-				<p class="govuk-body">$Body</p>
+				<div class="typography">$Body</div>
 			<% end_if %>
 		</div>
 		<%-- TODO: <div class="idsk-table__heading-extended">

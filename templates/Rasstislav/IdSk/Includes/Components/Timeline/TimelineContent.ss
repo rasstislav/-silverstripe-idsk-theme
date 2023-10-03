@@ -17,7 +17,7 @@
 	<div class="idsk-timeline__middle">
 		<span class="idsk-timeline__vertical-line--circle"></span>
 	</div>
-	<div class="idsk-timeline__content__caption">
+	<div class="idsk-timeline__content__caption typography">
 		$Content
 	</div>
 </div>

@@ -1,3 +1,3 @@
-<div id="uff" class="govuk-body">
+<div id="uff" class="typography">
 	$OnCompleteMessage
 </div>

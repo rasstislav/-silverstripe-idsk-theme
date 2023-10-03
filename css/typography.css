@@ -1,0 +1,479 @@
+/** ----------------------------------------------------------
+ *    0. Alignment
+ *    1. Fonts
+ *    2. Headings
+ *    3. Paragraphs
+ *    4. Hyperlinks
+ *    5. Lists
+ *    6. Media
+ *    7. Tables
+ *    8. Horizontal rules
+ * -------------------------------------------------------- */
+
+/*
+    0. Alignment
+    ============================================
+*/
+/* TODO: img, figure */
+/* left */
+.typography p.text-left,
+.typography h2.text-left,
+.typography h3.text-left,
+.typography h4.text-left,
+.typography td.text-left,
+.typography th.text-left,
+.typography li.text-left {
+    text-align: left;
+}
+
+.typography div.left {
+    text-align: left;
+}
+
+.typography ul.left,
+.typography ol.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.typography table.left {
+    margin-right: auto;
+}
+
+/* center */
+.typography p.text-center,
+.typography h2.text-center,
+.typography h3.text-center,
+.typography h4.text-center,
+.typography td.text-center,
+.typography th.text-center,
+.typography li.text-center {
+    text-align: center;
+}
+
+.typography div.center {
+    text-align: center;
+}
+
+.typography ul.center,
+.typography ol.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.typography table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* right */
+.typography p.text-right,
+.typography h2.text-right,
+.typography h3.text-right,
+.typography h4.text-right,
+.typography td.text-right,
+.typography th.text-right,
+.typography li.text-right {
+    text-align: right;
+}
+
+.typography div.right {
+    text-align: right;
+}
+
+.typography ul.right,
+.typography ol.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.typography table.right {
+    margin-left: auto;
+}
+
+/* justify */
+.typography p.text-justify {
+    text-align: justify;
+}
+
+/*
+    1. Fonts
+    https://idsk.gov.sk/komponenty/typografia#pismo
+    ============================================
+*/
+.typography {
+    font-family: Source Sans Pro,Arial,sans-serif;
+}
+
+/*
+    2. Headings
+    https://idsk.gov.sk/komponenty/typografia#nadpisy
+    ============================================
+*/
+/* h2 */
+.typography h2 {
+    color: #0b0c0c;
+    font-family: Source Sans Pro,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 700;
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.04167;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 20px
+}
+
+@media print {
+    .typography h2 {
+        color: #000;
+        font-family: sans-serif
+    }
+}
+
+@media (min-width: 40.0625em) {
+    .typography h2 {
+        font-size: 36px;
+        font-size: 2.25rem;
+        line-height: 1.11111
+    }
+}
+
+@media print {
+    .typography h2 {
+        font-size: 24pt;
+        line-height: 1.05
+    }
+}
+
+@media (min-width: 40.0625em) {
+    .typography h2 {
+        margin-bottom: 30px
+    }
+}
+
+/* h3 */
+.typography h3 {
+    color: #0b0c0c;
+    font-family: Source Sans Pro,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 700;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.11111;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 15px
+}
+
+@media print {
+    .typography h3 {
+        color: #000;
+        font-family: sans-serif
+    }
+}
+
+@media (min-width: 40.0625em) {
+    .typography h3 {
+        font-size: 24px;
+        font-size: 1.5rem;
+        line-height: 1.25
+    }
+}
+
+@media print {
+    .typography h3 {
+        font-size: 18pt;
+        line-height: 1.15
+    }
+}
+
+@media (min-width: 40.0625em) {
+    .typography h3 {
+        margin-bottom: 20px
+    }
+}
+
+/* h4 */
+.typography h4 {
+    color: #0b0c0c;
+    font-family: Source Sans Pro,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 700;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 15px
+}
+
+@media print {
+    .typography h4 {
+        color: #000;
+        font-family: sans-serif
+    }
+}
+
+@media (min-width: 40.0625em) {
+    .typography h4 {
+        font-size: 19px;
+        font-size: 1.1875rem;
+        line-height: 1.31579
+    }
+}
+
+@media print {
+    .typography h4 {
+        font-size: 14pt;
+        line-height: 1.15
+    }
+}
+
+@media (min-width: 40.0625em) {
+    .typography h4 {
+        margin-bottom: 20px
+    }
+}
+
+/*
+    3. Paragraphs
+    https://idsk.gov.sk/komponenty/typografia#hlavny-text
+    ============================================
+*/
+.typography p {
+    color: #0b0c0c;
+    font-family: Source Sans Pro,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 15px
+}
+
+.typography p:last-child {
+    margin-bottom: 0
+}
+
+@media print {
+    .typography p {
+        color: #000;
+        font-family: sans-serif
+    }
+}
+
+@media (min-width: 40.0625em) {
+    .typography p {
+        font-size: 19px;
+        font-size: 1.1875rem;
+        line-height: 1.31579
+    }
+}
+
+@media print {
+    .typography p {
+        font-size: 14pt;
+        line-height: 1.15
+    }
+}
+
+@media (min-width: 40.0625em) {
+    .typography p {
+        margin-bottom: 20px
+    }
+}
+
+/*
+    4. Hyperlinks
+    https://idsk.gov.sk/komponenty/typografia#textove-odkazy
+    ============================================
+*/
+.typography a {
+    font-family: Source Sans Pro,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: underline
+}
+
+@media print {
+    .typography a {
+        font-family: sans-serif
+    }
+}
+
+.typography a:focus {
+    outline: 3px solid rgba(0,0,0,0);
+    background-color: #ffdf0f;
+    box-shadow: 0 -2px #ffdf0f,0 4px #0b0c0c;
+    text-decoration: none
+}
+
+.typography a:link {
+    color: #0065b3
+}
+
+.typography a:visited {
+    color: #4c2c92
+}
+
+.typography a:hover {
+    color: #003078
+}
+
+.typography a:active,
+.typography a:focus {
+    color: #0b0c0c
+}
+
+@media print {
+    .typography a[href^="/"]:after,
+    .typography a[href^="http://"]:after,
+    .typography a[href^="https://"]:after {
+        content: " (" attr(href) ")";
+        font-size: 90%;
+        word-wrap: break-word
+    }
+}
+
+/*
+    5. Lists
+    https://idsk.gov.sk/komponenty/typografia#zoznamy
+    ============================================
+*/
+.typography ul,
+.typography ol {
+    font-family: Source Sans Pro,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #0b0c0c;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    list-style-type: none
+}
+
+.typography ul {
+    list-style-type: disc
+}
+
+.typography ol {
+    list-style-type: decimal
+}
+
+.typography ul:last-child,
+.typography ol:last-child {
+    margin-bottom: 0
+}
+
+@media print {
+    .typography ul,
+    .typography ol {
+        font-family: sans-serif
+    }
+}
+
+@media (min-width: 40.0625em) {
+    .typography ul,
+    .typography ol {
+        font-size: 19px;
+        font-size: 1.1875rem;
+        line-height: 1.31579
+    }
+}
+
+@media print {
+    .typography ul,
+    .typography ol {
+        font-size: 14pt;
+        line-height: 1.15;
+        color: #000
+    }
+}
+
+@media (min-width: 40.0625em) {
+    .typography ul,
+    .typography ol {
+        margin-bottom: 20px
+    }
+}
+
+.typography ul ul,
+.typography ul ol,
+.typography ol ol,
+.typography ol ul {
+    margin-top: 10px
+}
+
+.typography ul>li,
+.typography ol>li {
+    margin-bottom: 0px
+}
+
+@media (min-width: 40.0625em) {
+    .typography ul>li,
+    .typography ol>li {
+        margin-bottom: 5px
+    }
+}
+
+.typography p+ul,
+.typography p+ol {
+    margin-top: -7.5px
+}
+
+@media (min-width: 40.0625em) {
+    .typography p+ul,
+    .typography p+ol {
+        margin-top: -10px
+    }
+}
+
+/*
+    6. Media
+    ============================================
+*/
+/* TODO: */
+.typography img {
+    width: auto;
+    height: auto;
+    max-width: 100%
+}
+
+/*
+    7. Tables
+    ============================================
+*/
+/* TODO: */
+
+
+/*
+    8. Horizontal rules
+    ============================================
+*/
+.typography hr {
+    background: #000;
+    height: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none
+}
+
+@media (min-width: 40.0625em) {
+    .typography hr {
+        margin-top: 30px;
+        margin-bottom: 30px
+    }
+}

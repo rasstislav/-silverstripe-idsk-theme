@@ -1,1 +1,1 @@
-<div class="govuk-inset-text">$Content</div>
+<div class="govuk-inset-text typography">$Content</div>

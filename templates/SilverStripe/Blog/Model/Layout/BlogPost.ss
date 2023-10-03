@@ -26,7 +26,7 @@
 				<% if $ElementalArea %>
 					$ElementalArea
 				<% else %>
-					<div class="typography govuk-body">
+					<div class="typography">
 						$Summary
 						<% if $FeaturedImage && $ShowFeaturedImage %>
 							<p>$FeaturedImage.ScaleMaxWidth(720).setAttribute('aria-hidden', 'true').setAttribute('class', 'img-fluid')</p>
@@ -108,7 +108,7 @@
 				</div>
 			<% end_set %>
 			<% set Content %>
-				<div class="typography govuk-body">
+				<div class="typography">
 					$Summary
 					<% if $FeaturedImage && $ShowFeaturedImage %>
 						<p>$FeaturedImage.ScaleMaxWidth(720).setAttribute('aria-hidden', 'true').setAttribute('class', 'img-fluid')</p>

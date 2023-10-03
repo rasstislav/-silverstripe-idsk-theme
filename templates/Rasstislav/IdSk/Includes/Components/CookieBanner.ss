@@ -6,10 +6,10 @@
 				<div class="govuk-grid-row">
 					<div class="govuk-grid-column-two-thirds">
 						<span class="idsk-cookie-banner__heading govuk-heading-m">$CookiesBannerHeading</span>
-						<div class="idsk-cookie-banner__content">$CookiesBannerText</div>
+						<div class="idsk-cookie-banner__content typography">$CookiesBannerText</div>
 					</div>
 				</div>
-				<div class="idsk-button-group">
+				<div class="idsk-button-group govuk-!-margin-top-4">
 					<% if $CookiesBannerButtons %>
 						<button value="accept" type="button" name="cookies" data-module="idsk-button" class="idsk-button js-cookies-button-accept">
 							$CookiesBannerAcceptButtonTitle
@@ -24,10 +24,10 @@
 			<div class="idsk-cookie-banner__message govuk-width-container js-cookie-banner-accepted" hidden>
 				<div class="govuk-grid-row">
 					<div class="govuk-grid-column-two-thirds">
-						<div class="idsk-cookie-banner__content">$CookiesBannerAccepted</div>
+						<div class="idsk-cookie-banner__content typography">$CookiesBannerAccepted</div>
 					</div>
 				</div>
-				<div class="idsk-button-group">
+				<div class="idsk-button-group govuk-!-margin-top-4">
 					<a href="#" role="button" draggable="false" data-module="idsk-button" class="idsk-button js-cookies-button-accepted-hide">
 						Skryť správu
 					</a>
@@ -36,10 +36,10 @@
 			<div class="idsk-cookie-banner__message govuk-width-container js-cookie-banner-rejected" hidden>
 				<div class="govuk-grid-row">
 					<div class="govuk-grid-column-two-thirds">
-						<div class="idsk-cookie-banner__content">$CookiesBannerRejected</div>
+						<div class="idsk-cookie-banner__content typography">$CookiesBannerRejected</div>
 					</div>
 				</div>
-				<div class="idsk-button-group">
+				<div class="idsk-button-group govuk-!-margin-top-4">
 					<a href="#" role="button" draggable="false" data-module="idsk-button" class="idsk-button js-cookies-button-rejected-hide">
 						Skryť správu
 					</a>
