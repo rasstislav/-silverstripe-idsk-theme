@@ -1,0 +1,8 @@
+.userform--show-counter {
+    counter-reset: userformgroup;
+}
+
+.userform--show-counter .userformsgroup .govuk-fieldset__legend::before {
+    counter-increment: userformgroup;
+    content: counter(userformgroup) '. ';
+}

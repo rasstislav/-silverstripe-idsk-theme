@@ -28,12 +28,12 @@
 <% end_if %>
 
 <% if $Legend %>
-	<fieldset>
+	<fieldset<% if $controller.ShowCounterOnFieldGroups %> class="userform--show-counter"<% end_if %>>
 		<legend>$Legend</legend>
 		<% include SilverStripe\\UserForms\\Form\\UserFormFields %>
 	</fieldset>
 <% else %>
-	<div class="userform-fields">
+	<div class="userform-fields<% if $controller.ShowCounterOnFieldGroups %> userform--show-counter<% end_if %>">
 		<% include SilverStripe\\UserForms\\Form\\UserFormFields %>
 	</div>
 <% end_if %>
