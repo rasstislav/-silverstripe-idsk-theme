@@ -38,7 +38,7 @@
 						</div>
 						<div class="govuk-grid-column-one-third idsk-footer-extended-logo-box">
 							<% with $SiteConfig %>
-								<a href="$Top.CurrentLocale.BaseURL" title="domov">
+								<a href="$Top.CurrentLocaleObject.BaseURL" title="domov">
 									<img src="$FooterLogo.Link" alt="$FooterLogo.Title" class="idsk-footer-extended-logo">
 								</a>
 							<% end_with %>

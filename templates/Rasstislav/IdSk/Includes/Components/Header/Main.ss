@@ -9,7 +9,7 @@
 			<div class="govuk-grid-column-full govuk-grid-column-one-third-from-desktop">
 				<div class="idsk-header-web__main-headline">
 					<% with $SiteConfig %>
-						<a href="$Top.CurrentLocale.BaseURL" title="Odkaz na úvodnú stránku" rel="home">
+						<a href="$Top.CurrentLocaleObject.BaseURL" title="Odkaz na úvodnú stránku" rel="home">
 							<img src="$HeaderLogo.Link" alt="$HeaderLogo.Title" class="idsk-header-web__main-headline-logo u-mw-100">
 						</a>
 					<% end_with %>
