@@ -8,9 +8,11 @@
 		<div class="govuk-grid-row">
 			<div class="govuk-grid-column-full govuk-grid-column-one-third-from-desktop">
 				<div class="idsk-header-web__main-headline">
-					<a href="$CurrentLocale.BaseURL" title="Odkaz na úvodnú stránku" rel="home">
-						<img src="$ThemeDir/images/logo.svg" alt="$SiteConfig.Title" class="idsk-header-web__main-headline-logo u-mw-100">
-					</a>
+					<% with $SiteConfig %>
+						<a href="$Top.CurrentLocale.BaseURL" title="Odkaz na úvodnú stránku" rel="home">
+							<img src="$HeaderLogo.Link" alt="$HeaderLogo.Title" class="idsk-header-web__main-headline-logo u-mw-100">
+						</a>
+					<% end_with %>
 					<% if not $IsService %>
 						<button aria-label="Rozbaliť menu" aria-expanded="false" data-text-for-show="Rozbaliť menu" data-text-for-hide="Zavrieť menu" data-text-for-close="Zavrieť" class="idsk-button idsk-header-web__main-headline-menu-button">
 							Menu

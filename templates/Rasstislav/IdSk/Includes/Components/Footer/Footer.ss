@@ -37,9 +37,11 @@
 							</p>
 						</div>
 						<div class="govuk-grid-column-one-third idsk-footer-extended-logo-box">
-							<a href="$CurrentLocale.BaseURL" title="domov">
-								<img src="$ThemeDir/images/logo_footer.svg" alt="$SiteConfig.Title" class="idsk-footer-extended-logo">
-							</a>
+							<% with $SiteConfig %>
+								<a href="$Top.CurrentLocale.BaseURL" title="domov">
+									<img src="$FooterLogo.Link" alt="$FooterLogo.Title" class="idsk-footer-extended-logo">
+								</a>
+							<% end_with %>
 						</div>
 					</div>
 				</div>
