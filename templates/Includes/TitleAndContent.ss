@@ -8,6 +8,9 @@ $BeforeContent
 <% if $ElementalArea %>
 	$ElementalArea
 <% else %>
-	$Content
+	<div class="typography">
+		$Content
+	</div>
+	$Form
 <% end_if %>
 $AfterContent
