@@ -53,6 +53,17 @@
     }
 }
 
+/* header socials */
+.idsk-header-extended__social {
+    flex-shrink: 0;
+}
+
+@media (max-width: 48.0525em) {
+    .idsk-header-web__nav .idsk-header-web__main--buttons .idsk-header-extended__social-list {
+        margin-bottom: 20px;
+    }
+}
+
 /* intro-block */
 @media (min-width: 48.0625em) {
     .idsk-intro-block__list__ul {

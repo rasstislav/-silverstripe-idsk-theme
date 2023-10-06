@@ -17,11 +17,16 @@
 				</div>
 			<% end_if %>
 		</div>
-		<% if $AddLoginButton %>
+		<% if $SiteConfig.hasSocialNetworks || $AddLoginButton %>
 			<div class="govuk-grid-row">
 				<div class="govuk-grid-column-full">
 					<div class="idsk-header-web__main--buttons">
-						<% include Rasstislav/IdSk/Includes/Components/Header/Login %>
+						<% if $SiteConfig.hasSocialNetworks %>
+							<% include Rasstislav/IdSk/Includes/Components/Header/SocialList %>
+						<% end_if %>
+						<% if $AddLoginButton %>
+							<% include Rasstislav/IdSk/Includes/Components/Header/Login %>
+						<% end_if %>
 					</div>
 				</div>
 			</div>

@@ -32,6 +32,11 @@
 					<% if not $IsService %>
 						$SearchForm.addExtraClass(idsk-header-web__main-action-search)
 					<% end_if %>
+					<% if $SiteConfig.hasSocialNetworks %>
+						<div class="idsk-header-extended__social govuk-!-margin-left-2">
+							<% include Rasstislav/IdSk/Includes/Components/Header/SocialList %>
+						</div>
+					<% end_if %>
 					<% if $AddLoginButton %>
 						<div class="idsk-header-web__main--buttons">
 							<% include Rasstislav/IdSk/Includes/Components/Header/Login %>
