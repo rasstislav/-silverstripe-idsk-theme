@@ -1,4 +1,4 @@
-<button $addExtraClass('govuk-button').setAttribute('data-module', 'govuk-button').AttributesHTML>
+<button $addExtraClass('govuk-button').setAttribute('data-module', 'govuk-button').getAttributesHTML('name')>
 	<span class="govuk-visually-hidden">$Title.XML</span>
 	<i aria-hidden="true" class="fas fa-search"></i>
 </button>
