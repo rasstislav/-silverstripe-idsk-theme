@@ -1,4 +1,6 @@
-<% if $BackLink %>
+<% if $BackLinkContent %>
+	$BackLinkContent
+<% else_if $BackLink %>
 	$BackLink.addExtraClass('govuk-back-link')
 <% end_if %>
 <% if $ShowTitle %>

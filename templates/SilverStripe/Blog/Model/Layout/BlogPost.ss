@@ -100,6 +100,15 @@
 	<% else %>
 		<% template 'Includes/TitleAndContent' %>
 			<% set ShowTitle %>1<% end_set %>
+			<% set BackLinkContent %>
+				<% if not $BackLink %>
+					<% with $Parent %>
+						<% if $ShowBackLinkInPosts %>
+							$PostBackLink.addExtraClass('govuk-back-link')
+						<% end_if %>
+					<% end_with %>
+				<% end_if %>
+			<% end_set %>
 			<% set BeforeContent %>
 				<div>
 					<% if $PublishDate %>
