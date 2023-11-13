@@ -1,0 +1,20 @@
+.idsk-customer-surveys__step .govuk-fieldset__legend {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+    width: auto
+}
+
+.idsk-customer-surveys__step .govuk-fieldset__legend.govuk-fieldset__legend--m {
+    border-top: 1px solid #0b0c0c;
+    padding-top: 16px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    width: 100%
+}
+
+.idsk-customer-surveys__step .middleColumn .govuk-form-group > .govuk-label,
+.idsk-customer-surveys__step .middleColumn .govuk-form-group > .govuk-fieldset > .govuk-fieldset__legend {
+    display: none;
+}
